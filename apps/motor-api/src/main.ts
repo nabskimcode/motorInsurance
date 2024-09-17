@@ -18,7 +18,7 @@ async function bootstrap() {
           'Please enter JWT token here in the format: Bearer <your-token>',
         bearerFormat: 'JWT',
       },
-      'access-token', // This is the name of the security scheme
+      'access-token',
     )
     .build();
 
