@@ -1,0 +1,31 @@
+{
+  "$schema": "https://json.schemastore.org/nest-cli",
+  "collection": "@nestjs/schematics",
+  "sourceRoot": "apps/motorz-insurance/src",
+  "monorepo": true,
+  "root": "apps/motorz-insurance",
+  "compilerOptions": {
+    "webpack": true,
+    "tsConfigPath": "apps/motorz-insurance/tsconfig.app.json"
+  },
+  "projects": {
+    "motorz-insurance": {
+      "type": "application",
+      "root": "apps/motorz-insurance",
+      "entryFile": "main",
+      "sourceRoot": "apps/motorz-insurance/src",
+      "compilerOptions": {
+        "tsConfigPath": "apps/motorz-insurance/tsconfig.app.json"
+      }
+    },
+    "motor-api": {
+      "type": "application",
+      "root": "apps/motor-api",
+      "entryFile": "main",
+      "sourceRoot": "apps/motor-api/src",
+      "compilerOptions": {
+        "tsConfigPath": "apps/motor-api/tsconfig.app.json"
+      }
+    }
+  }
+}
