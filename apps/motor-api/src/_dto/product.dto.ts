@@ -1,4 +1,3 @@
-// api/src/product/dto/product.dto.ts
 import { ApiProperty } from '@nestjs/swagger';
 import { Transform } from 'class-transformer';
 import { IsInt, IsString, IsNumber, IsNotEmpty } from 'class-validator';
